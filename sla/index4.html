@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alternar Imagem</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    img {
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Alternar Imagem</h1>
+
+<img id="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6uqvH6XCpsnNOwEpPwOgcE1vbaIlR4xejoA&s" alt="Imagem 1">
+<center>
+<p>
+<button onclick="alternarImagem()">Alternar</button>
+</p>
+</center>
+<script>
+    function alternarImagem() {
+        var imagem = document.getElementById("imagem");
+        if (imagem.src.match("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8eHAXPzP85syNc5Nwur-cwZw0yIiRvC8orA&s")) {
+            imagem.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6uqvH6XCpsnNOwEpPwOgcE1vbaIlR4xejoA&s";
+        } else {
+            imagem.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8eHAXPzP85syNc5Nwur-cwZw0yIiRvC8orA&s";
+        }
+    }
+</script>
+<center>
+    <p style="color:aliceblue">
+        <a href="index.html">clique aqui para ver o outro exercício =)</a>
+    </p>
+    </center>
+</body>
+</html>
